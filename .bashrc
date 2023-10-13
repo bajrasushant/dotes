@@ -1,0 +1,1 @@
+/home/bajra_sushant/.bashrc
