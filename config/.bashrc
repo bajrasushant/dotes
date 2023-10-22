@@ -89,3 +89,5 @@ _open_files_for_editing() {
 # alias pacdiff=eos-pacdiff
 ################################################################################
 
+alias pomo='i3-msg move workspace number 10 && $HOME/scripts/pomodoro_cycle.sh'
+alias ld='$HOME/scripts/update_alacritty_config.sh'

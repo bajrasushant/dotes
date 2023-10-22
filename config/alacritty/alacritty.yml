@@ -811,7 +811,7 @@ schemes:
 # *NordLight
 # *TomorrowNight
 
-colors: *SolarizedLight
+colors: *Nord
 
 # Bell
 #
