@@ -36,8 +36,7 @@ window:
 
   # Window position (changes require restart)
   #
-  # Specified in number of pixels.
-  # If the position is not set, the window manager will handle the placement.
+  # Specified in number of pixels. If the position is not set, the window manager will handle the placement.
   #position:
   #  x: 0
   #  y: 0
@@ -811,7 +810,7 @@ schemes:
 # *NordLight
 # *TomorrowNight
 
-colors: *Nord
+colors: *SolarizedLight
 
 # Bell
 #
