@@ -2,8 +2,8 @@
 
 declare -A pomo_options
 
-pomo_options["work"]="50"
-pomo_options["break"]="10"
+pomo_options["work"]="40"
+pomo_options["break"]="8"
 
 SOUND_DIR=~/scripts/pomodoro/sounds
 SOUND_FILE=bowl_sound.wav
@@ -18,7 +18,7 @@ cleanup() {
 trap cleanup EXIT SIGINT SIGTERM
 
 play_sound() {
-	mpv --really-quiet --no-video --start=0 --end=3 "$SOUND_DIR/$SOUND_FILE" &
+	mpv --really-quiet --no-video --start=0 --end=3 --volume=200 "$SOUND_DIR/$SOUND_FILE" &
 }
 
 custom_timer() {

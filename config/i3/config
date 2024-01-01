@@ -286,8 +286,10 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym $mod+p exec /usr/local/bin/switch-audio-port
 
 ## App shortcuts
+# bindsym $mod+w exec /usr/bin/google-chrome-stable
 bindsym $mod+w exec /usr/bin/google-chrome-stable
-bindsym $mod+Shift+w exec /usr/bin/firefox
+bindsym $mod+Shift+w exec /usr/bin/brave
+bindsym $mod+Shift+f exec /usr/bin/firefox
 bindsym $mod+n exec /usr/bin/thunar
 # bindsym Print exec scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
 bindsym Print exec flameshot 
