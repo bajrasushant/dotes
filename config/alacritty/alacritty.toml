@@ -1,35 +1,39 @@
+import = [
+"~/.config/alacritty/themes/themes/dracula.toml"
+]
 [colors]
 draw_bold_text_with_bright_colors = false
 
-[colors.bright]
-black = "#4C566A"
-blue = "#81A1C1"
-cyan = "#8FBCBB"
-green = "#A3BE8C"
-magenta = "#B48EAD"
-red = "#BF616A"
-white = "#ECEFF4"
-yellow = "#EBCB8B"
-
-[colors.normal]
-black = "#3B4252"
-blue = "#81A1C1"
-cyan = "#88C0D0"
-green = "#A3BE8C"
-magenta = "#B48EAD"
-red = "#BF616A"
-white = "#E5E9F0"
-yellow = "#EBCB8B"
-
-[colors.primary]
-background = "#2E3440"
-foreground = "#D8DEE9"
+## default
+# [colors.primary]
+# background = "#2E3440"
+# foreground = "#D8DEE9"
+#
+# [colors.bright]
+# black = "#4C566A"
+# blue = "#81A1C1"
+# cyan = "#8FBCBB"
+# green = "#A3BE8C"
+# magenta = "#B48EAD"
+# red = "#BF616A"
+# white = "#ECEFF4"
+# yellow = "#EBCB8B"
+#
+# [colors.normal]
+# black = "#3B4252"
+# blue = "#81A1C1"
+# cyan = "#88C0D0"
+# green = "#A3BE8C"
+# magenta = "#B48EAD"
+# red = "#BF616A"
+# white = "#E5E9F0"
+# yellow = "#EBCB8B"
 
 [env]
 TERM = "alacritty"
 
 [font]
-size = 12.0
+size = 14.0
 
 [font.bold]
 family = "Mononoki Nerd Font"
@@ -154,8 +158,7 @@ mods = "Shift"
 # [schemes.Catppuccin-Frappe.normal]
 # black = "#51576D"
 # blue = "#8CAAEE"
-# cyan = "#81C8BE"
-# green = "#A6D189"
+# cyan = "#81C8BE" green = "#A6D189"
 # magenta = "#F4B8E4"
 # red = "#E78284"
 # white = "#B5BFE2"
