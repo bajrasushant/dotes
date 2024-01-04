@@ -3,8 +3,8 @@
 hour=$(date +"%-H")
 config_path="/home/bajra_sushant/.config/alacritty/alacritty.toml"
 
-light="solarized_light"
-dark="gruvbox_dark"
+light="catppuccin_latte"
+dark="catppuccin_frappe"
 
 if [ "$1" == "--light" ]; then
 	sed -i "s/$dark/$light/g" $config_path

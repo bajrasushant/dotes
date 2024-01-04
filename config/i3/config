@@ -529,13 +529,13 @@ set $yellowbrown	#e1b700
 
 #dracula
 # class                 border  bground text    indicator child_border
-client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
-client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
-client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
-client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
-client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
-
-client.background       #F8F8F2
+# client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
+# client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
+# client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
+# client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
+# client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+# 
+# client.background       #F8F8F2
 
 #  # blue gruvbox
 # # class                 border			|backgr		|text		|indicator	|child_border
@@ -552,15 +552,51 @@ client.background       #F8F8F2
 # (plus the system information i3status finds out, if available)
 
 # set primary gruvbox colorschemes
-set $bg #282828
-set $red #cc241d
-set $green #98971a
-set $yellow #d79921
-set $blue #458588
-set $purple #b16286
-set $aqua #689d68
-# set $gray #a89984
-set $darkgray #1d2021
+# set $bg #282828
+# set $red #cc241d
+# set $green #98971a
+# set $yellow #d79921
+# set $blue #458588
+# set $purple #b16286
+# set $aqua #689d68
+# # set $gray #a89984
+# set $darkgray #1d2021
+
+# setting catppuccin frappe
+set $rosewater #f2d5cf
+set $flamingo  #eebebe
+set $pink      #f4b8e4
+set $mauve     #ca9ee6
+set $red       #e78284
+set $maroon    #ea999c
+set $peach     #ef9f76
+set $yellow    #e5c890
+set $green     #a6d189
+set $teal      #81c8be
+set $sky       #99d1db
+set $sapphire  #85c1dc
+set $blue      #8caaee
+set $lavender  #babbf1
+set $text      #c6d0f5
+set $subtext1  #b5bfe2
+set $subtext0  #a5adce
+set $overlay2  #949cbb
+set $overlay1  #838ba7
+set $overlay0  #737994
+set $surface2  #626880
+set $surface1  #51576d
+set $surface0  #414559
+set $base      #303446
+set $mantle    #292c3c
+set $crust     #232634
+
+# target                 title     bg    text   indicator  border
+client.focused           $lavender $base $text  $rosewater $lavender
+client.focused_inactive  $overlay0 $base $text  $rosewater $overlay0
+client.unfocused         $overlay0 $base $text  $rosewater $overlay0
+client.urgent            $peach    $base $peach $overlay0  $peach
+client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
+client.background        $base
 
 bar {
 		# font pango: Noto Sans Regular 10
@@ -581,56 +617,28 @@ bar {
 strip_workspace_numbers yes
 # strip_workspace_name no
 		    colors {
-		    # background         $bg
-		    # statusline         $white
-		    # separator  #1f222d
-		    # background #1f222d 
-		    # background #002b36
-		    # statusline #839496
-		    # separator  #586e75
-#                          		border 		        bg		txt		indicator
-		#focused_workspace	$mediumgrey	   	$grey		$darkgrey	$purple
-		#active_workspace	$lightblue      	$mediumgrey	$darkgrey	$purple
-		#inactive_workspace	$darkgrey   		$darkgrey	$grey		$purple
-		#urgent_workspace	$urgentred	    	$urgentred	$white		$purple
-
-		 # focused_workspace  #1f222d #5e81ac    #d8dee9
-		 # nord
-		# focused_workspace  #1f222d #1f222d #d8dee9
-		# active_workspace   #1f222d #252936    #5e81ac
-		# inactive_workspace #1f222d #1f222d    #4c566a
-		# urgent_workspace   #1f222d #1f222d    #ee829f
-		# binding_mode       #1f222d #81a1c1    #2e3440
-
-		# b&w
-		# focused_workspace  $bg $gray $bg
-		# active_workspace  $bg $gray $bg
-		# urgent_workspace   $urgentred $urgentred $bg 
-		# inactive_workspace $bg $bg $gray
-
-		# # gruvbox
-		# #                    border    backgr.   text
-		# focused_workspace    $aqua     $aqua     $darkgray
-		# inactive_workspace   $darkgray $darkgray $yellow
-		# active_workspace     $darkgray $darkgray $yellow
-		# urgent_workspace     $red      $red      $bg
-
-		# #solarized
-		# focused_workspace  #b58900 #b58900 #002b36
-		# active_workspace   #586e75 #586e75 #002b36
-		# inactive_workspace #073642 #002b36 #839496
-		# urgent_workspace   #dc322f #dc322f #fdf6e3
+    # catppuccine frappe
+    background         $base
+    statusline         $text
+    focused_statusline $text
+    active_workspace   $base $text $blue
+    focused_separator  $base
+    focused_workspace  $base $base $green
+    active_workspace   $base $base $blue
+    inactive_workspace $base $base $surface1
+    urgent_workspace   $base $base $surface1
+    binding_mode       $base $base $surface1
 
 		#dracula
-		background #282A36
-		statusline #F8F8F2
-		separator  #44475A
+	#	background #282A36
+	#	statusline #F8F8F2
+	#	separator  #44475A
 
-		focused_workspace  #44475A #44475A #F8F8F2
-		active_workspace   #282A36 #44475A #F8F8F2
-		inactive_workspace #282A36 #282A36 #BFBFBF
-		urgent_workspace   #FF5555 #FF5555 #F8F8F2
-		binding_mode       #FF5555 #FF5555 #F8F8F2
+	#	focused_workspace  #44475A #44475A #F8F8F2
+	#	active_workspace   #282A36 #44475A #F8F8F2
+	#	inactive_workspace #282A36 #282A36 #BFBFBF
+	#	urgent_workspace   #FF5555 #FF5555 #F8F8F2
+	#	binding_mode       #FF5555 #FF5555 #F8F8F2
 	}
 
 }
